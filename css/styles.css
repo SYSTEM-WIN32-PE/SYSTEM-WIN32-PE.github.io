@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'BorelRegular';
+    src: url('../fonts/Borel-Regular-6nnjaT-3.ttf') format('truetype'); /* 字体文件路径 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'BorelRegular', Arial, sans-serif;
+    background-image: url('../background/background1.jpg'); /* 背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start; /* 将内容放在顶部 */
+    justify-content: center; /* 水平居中 */
+    color: white;
+    padding-top: 55px; /* 添加上边距以将内容推向中上方 */
+}
+
+/* 毛玻璃效果 */
+.frosted-glass {
+    background: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果，模糊背景 */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* GitHub按钮的css设置 */
+.GitHub-button {
+    background: rgba(255, 255, 255, 0.3); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    border: none;
+    border-radius: 25px; /* 圆角 */
+    color: white; /* 字体颜色 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+    position: absolute; /* 绝对定位 */
+    top: 20px; /* 距离顶部20px */
+    right: 20px; /* 距离右侧20px */
+    transition: background 0.3s; /* 背景色变化的过渡效果 */
+}
+
+.GitHub-button:hover {
+    background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
+    
+}
+
+/*BiliBiili按钮的css设置*/
+.bilibili-button {
+    background: rgba(255, 255, 255, 0.3); /* Bilibili 红色背景，带有透明度 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    border: none; /* 无边框 */
+    border-radius: 25px; /* 圆角 */
+    color: white; /* 字体颜色 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+    position: absolute; /* 绝对定位 */
+    top: 20px; /* 距离顶部20px */
+    right: 200px; /* 距离右侧200px，避免重叠 */
+    transition: background 0.3s; /* 背景色变化的过渡效果 */
+}
+
+.bilibili-button:hover {
+    background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
+}
