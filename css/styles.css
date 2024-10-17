@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'BorelRegular';
-    src: url('../fonts/Borel-Regular-6nnjaT-3.ttf') format('truetype'); /* 字体文件路径 */
+    font-family: 'MyCustomFont';
+    src: url('../fonts/indexFonts.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
+body {
+    font-family: 'MyCustomFont', sans-serif; /* 全局字体设置 */
+}
+
+/* 可选: 针对特定元素设置 */
+h1, h2, h3, p {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
 
 body {
     margin: 0;
@@ -19,21 +29,23 @@ body {
     padding-top: 55px; /* 添加上边距以将内容推向中上方 */
 }
 
-/* 毛玻璃效果 */
-.frosted-glass {
-    background: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
-    backdrop-filter: blur(10px); /* 毛玻璃效果，模糊背景 */
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
+/* 这里是 "欢迎来到我的第一个网站" 的设置 */
+.Welcome-to-Web {
+    margin-top: 100px; /* 从顶部偏移100像素 */
+    margin-left: -750px; /* 从左侧偏移-750像素 */
+    background: rgba(255, 255, 255, 0.3); /* 透明背景 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
+    padding: 20px; /* 内边距 */
+    border-radius: 30px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
 }
+
+
 
 /* GitHub按钮的css设置 */
 .GitHub-button {
     background: rgba(255, 255, 255, 0.3); /* 半透明背景 */
-    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
     border: none;
     border-radius: 25px; /* 圆角 */
     color: white; /* 字体颜色 */
@@ -48,13 +60,12 @@ body {
 
 .GitHub-button:hover {
     background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
-    
 }
 
-/*BiliBiili按钮的css设置*/
+/* Bilibili按钮的css设置 */
 .bilibili-button {
-    background: rgba(255, 255, 255, 0.3); /* Bilibili 红色背景，带有透明度 */
-    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    background: rgba(255, 255, 255, 0.3); /* Bilibili 半色背景，带有透明度 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
     border: none; /* 无边框 */
     border-radius: 25px; /* 圆角 */
     color: white; /* 字体颜色 */
@@ -63,10 +74,57 @@ body {
     cursor: pointer; /* 鼠标指针样式 */
     position: absolute; /* 绝对定位 */
     top: 20px; /* 距离顶部20px */
-    right: 200px; /* 距离右侧200px，避免重叠 */
+    right: 200px; /* 距离右侧200px */
     transition: background 0.3s; /* 背景色变化的过渡效果 */
 }
 
 .bilibili-button:hover {
     background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
 }
+
+/*Github-Web-Code按钮的css设置 */
+.Github-Web-code-button {
+    background: rgba(255, 255, 255, 0.3); /* Github-Web-Code 半色背景，带有透明度 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
+    border: none; /* 无边框 */
+    border-radius: 25px; /* 圆角 */
+    color: white; /* 字体颜色 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+    position: absolute; /* 绝对定位 */
+    top: 20px; /* 距离顶部20px */
+    right: 410px; /* 距离右侧410px */
+    transition: background 0.3s; /* 背景色变化的过渡效果 */
+}
+
+.Github-Web-code-button:hover {
+    background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
+}
+
+/* 新增的样式，用于显示日期和时间 */
+.now-time {
+    text-align: center;
+    margin-top: 110px;
+    margin-right: -690px;
+    background: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
+    border-radius: 20px; /* 圆角效果 */
+    padding: 20px; /* 内边距，确保内容不紧贴边缘 */
+}
+
+/* 时间样式 */
+#time {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 公历和农历日期样式 */
+#lunar-date, #gregorian-date {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+
+
