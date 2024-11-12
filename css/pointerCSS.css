@@ -1,0 +1,8 @@
+body {
+    cursor: url('../pointer/FluentCursor16Filled.png'),pointer;
+}
+
+/* 设置按钮的鼠标指针样式为自定义手势 */
+button {
+    cursor: url('../pointer/FluentCursorClick20Regular.png'), pointer;
+}

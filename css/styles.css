@@ -18,7 +18,7 @@ h1, h2, h3, p {
 body {
     margin: 0;
     font-family: 'BorelRegular', Arial, sans-serif;
-    background-image: url('../background/background1.jpg'); /* 背景图片路径 */
+    background-image: url('../background/idk.jpg'); /* 背景图片路径 */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -102,6 +102,25 @@ body {
     background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
 }
 
+.WebRecord-button {
+    background: rgba(255, 255, 255, 0.3); /* 半色背景，带有透明度 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
+    border: none; /* 无边框 */
+    border-radius: 25px; /* 圆角 */
+    color: white; /* 字体颜色 */
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+    position: absolute; /* 绝对定位 */
+    top: 20px; /* 距离顶部20px */
+    right: 600px; /* 距离右侧5=600px */
+    transition: background 0.3s; /* 背景色变化的过渡效果 */
+}
+
+.WebRecord-button:hover {
+    background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
+}
+
 /* 新增的样式，用于显示日期和时间 */
 .now-time {
     text-align: center;
@@ -127,4 +146,4 @@ body {
     margin-top: 5px;
 }
 
-
+/*  我操你妈的鸡巴 css跟星怒一样臭鸡巴css难写的要死 以后干脆不写注释了 变成我的第一托史山代码就好了 by:2024/11/12  */

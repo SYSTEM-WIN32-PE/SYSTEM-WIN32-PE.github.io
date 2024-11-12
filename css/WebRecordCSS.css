@@ -1,0 +1,24 @@
+.NaoCaiWenZi {
+    margin-top: 200px; /* 从顶部偏移100像素 */
+    margin-left: 350px; /* 从左侧偏移100像素 */
+    margin-right: 300px;
+    background: rgba(255, 255, 255, 0.3); /* 透明背景 */
+    backdrop-filter: blur(2px); /* 毛玻璃效果 */
+    padding: 20px; /* 内边距 */
+    border-radius: 30px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
+body {
+    margin: 0;
+    font-family: 'BorelRegular', Arial, sans-serif;
+    background-image: url('../background/wall01.png'); /* 背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start; /* 将内容放在顶部 */
+    justify-content: center; /* 水平居中 */
+    color: white;
+    padding-top: 55px; /* 添加上边距以将内容推向中上方 */
+}
