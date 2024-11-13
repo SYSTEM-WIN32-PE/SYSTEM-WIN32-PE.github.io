@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="css/styles.css"> <!-- 引入样式文件 -->
     <script src="JavaScript/time.js" defer></script> <!-- 引入外部 JavaScript 文件 -->
     <link rel="stylesheet" href="css/pointerCSS.css"> <!-- 引入样式文件 -->
+    <script src="JavaScript/GetIPnode.js" defer></script> <!-- 引入外部 JavaScript 文件 -->
     <link rel="png" href="../favicon/tbigv-ebhwt.png" type="image/png">
 </head>
 <body>
     <div class="Welcome-to-Web">
-        <h1>欢迎来到SYSTEM WIN32的第一个网站</h1>
+        <h1>欢迎来到咩老师的网站</h1>
     </div>
     
     <!-- 显示实时时间和公历 -->
     <div class="now-time">
         <div id="time"></div>
         <div id="gregorian-date"></div>
+    </div>
+    
+    <div class="ip-info-bar">
+           <!-- Logo 容器 -->
+    <div class="logo">
+        <img src="resources/images/logo.png" alt="网站LOGO">
+    </div>
+        <!-- IP 信息组 -->
+        <div class="ip-info-group">
+            <div class="ip-info">您的 IP：<span id="ip"></span></div>
+            <div class="ip-info">IP 国家：<span id="country"></span></div>
+            <div class="ip-info">ISP 名称：<span id="isp"></span></div>
+        </div>
     </div>
 
     <!-- GitHub 按钮 -->

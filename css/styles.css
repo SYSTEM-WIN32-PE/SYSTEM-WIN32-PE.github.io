@@ -31,7 +31,7 @@ body {
 
 /* 这里是 "欢迎来到我的第一个网站" 的设置 */
 .Welcome-to-Web {
-    margin-top: 100px; /* 从顶部偏移100像素 */
+    margin-top: -500px; /* 从顶部偏移500像素 */
     margin-left: -750px; /* 从左侧偏移-750像素 */
     background: rgba(255, 255, 255, 0.3); /* 透明背景 */
     backdrop-filter: blur(2px); /* 毛玻璃效果 */
@@ -53,7 +53,7 @@ body {
     font-size: 16px; /* 字体大小 */
     cursor: pointer; /* 鼠标指针样式 */
     position: absolute; /* 绝对定位 */
-    top: 20px; /* 距离顶部20px */
+    top: 100px; /* 距离顶部100px */
     right: 20px; /* 距离右侧20px */
     transition: background 0.3s; /* 背景色变化的过渡效果 */
 }
@@ -73,7 +73,7 @@ body {
     font-size: 16px; /* 字体大小 */
     cursor: pointer; /* 鼠标指针样式 */
     position: absolute; /* 绝对定位 */
-    top: 20px; /* 距离顶部20px */
+    top: 100px; /* 距离顶部100px */
     right: 200px; /* 距离右侧200px */
     transition: background 0.3s; /* 背景色变化的过渡效果 */
 }
@@ -93,7 +93,7 @@ body {
     font-size: 16px; /* 字体大小 */
     cursor: pointer; /* 鼠标指针样式 */
     position: absolute; /* 绝对定位 */
-    top: 20px; /* 距离顶部20px */
+    top: 100px; /* 距离顶部100px */
     right: 410px; /* 距离右侧410px */
     transition: background 0.3s; /* 背景色变化的过渡效果 */
 }
@@ -112,7 +112,7 @@ body {
     font-size: 16px; /* 字体大小 */
     cursor: pointer; /* 鼠标指针样式 */
     position: absolute; /* 绝对定位 */
-    top: 20px; /* 距离顶部20px */
+    top: 100px; /* 距离顶部100px */
     right: 600px; /* 距离右侧5=600px */
     transition: background 0.3s; /* 背景色变化的过渡效果 */
 }
@@ -121,15 +121,89 @@ body {
     background: rgba(255, 255, 255, 0.5); /* 悬停时的背景色 */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/*这里是获取ip地址的css代码*/
+/* 页面基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部信息栏样式 */
+.ip-info-bar {
+    padding: 20px 16px; /* 更窄的白边 */
+    background: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #333;
+}
+
+/* logo 样式 */
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 右侧信息组样式 */
+.ip-info-group {
+    display: flex;
+    gap: 100px; /* 控制各项信息的间距 */
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 60%; /* 限制右侧信息区域的最大宽度 */
+    overflow: hidden;
+    margin-right: 35px; /* 向左偏移一点距离 */
+    white-space: nowrap;
+}
+
+/* 每条信息样式 */
+.ip-info {
+    font-size: px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 超出时显示省略号 */
+    white-space: nowrap;
+}
+
+
+/*这里是获取ip地址的css代码结束的地方*/
+
 /* 新增的样式，用于显示日期和时间 */
 .now-time {
     text-align: center;
-    margin-top: 110px;
+    margin-top: -500px;
     margin-right: -690px;
     background: rgba(255, 255, 255, 0.2); /* 半透明背景 */
     backdrop-filter: blur(2px); /* 毛玻璃效果 */
     border-radius: 20px; /* 圆角效果 */
     padding: 20px; /* 内边距，确保内容不紧贴边缘 */
+}
+
+/*网页logo css代码*/
+/* logo 样式 */
+.logo img {
+    height: 30px; /* 调整 logo 的高度 */
+    width: auto; /* 保持比例 */
+    display: block;
 }
 
 /* 时间样式 */
